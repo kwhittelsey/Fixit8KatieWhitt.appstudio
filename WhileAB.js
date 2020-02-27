@@ -1,11 +1,12 @@
 // AB scenario part 1
 
-let name = prompt(`What is your first and last name?`)
-let firstName = name.toUpperCase()
+let firstName = prompt("Please give your first name")
+let lastName = prompt("Please give your second name")
+let fullName = (firstName + " " + lastName)
+
 
 i = 0
-
-while (i < firstName.lenngth) {
-     console.log(`Letter ${i+1} is ${i}`)
-     i++;
+while (i < fullName.length) {
+  console.log("Letter " + (i+1) +  " is " + fullName.charAt(i))
+  i++
 }
